@@ -65,11 +65,16 @@ export default function Sidebar() {
           </nav>
           
           <div className="px-4 py-6 border-t border-gray-200">
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-              <div className="ml-3">
-                <p className="text-sm font-medium text-gray-700">Admin</p>
-                <p className="text-xs text-gray-500">Administrador</p>
+            <div className="space-y-3">
+              <div className="text-xs text-gray-600">
+                <p className="font-medium">Contatos:</p>
+                <p>(44) 98415-2049 - Diego</p>
+                <p>(44) 98456-4529 - Jonathan</p>
+              </div>
+              <div className="text-xs text-gray-600">
+                <p>contato@vidracarialideranca.com.br</p>
+                <p>Rua Toshie Nishiyama Sucupira, 3947</p>
+                <p>Umuarama - PR</p>
               </div>
             </div>
           </div>

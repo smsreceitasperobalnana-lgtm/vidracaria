@@ -34,12 +34,7 @@ export default function Header() {
             
             <div className="flex items-center space-x-3">
               <span className="text-sm font-medium text-gray-700 hidden sm:block">
-                {new Date().toLocaleDateString('pt-BR', { 
-                  weekday: 'long', 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
-                })}
+                (44) 98415-2049 - Diego | (44) 98456-4529 - Jonathan
               </span>
             </div>
           </div>
