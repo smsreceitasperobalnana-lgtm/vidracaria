@@ -1,15 +1,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { AppProvider } from './contexts/AppContext'
+import { AppProvider } from './contexts/SimpleContext'
 import Layout from './components/Layout/Layout'
 import Dashboard from './pages/Dashboard'
-import Customers from './pages/Customers/Customers'
-import CustomerForm from './pages/Customers/CustomerForm'
-import CustomerDetail from './pages/Customers/CustomerDetail'
-import Quotes from './pages/Quotes/Quotes'
-import QuoteForm from './pages/Quotes/QuoteForm'
-import QuoteDetail from './pages/Quotes/QuoteDetail'
-import Reports from './pages/Reports'
+import Clientes from './pages/Clientes/Clientes'
+import ClienteForm from './pages/Clientes/ClienteForm'
+import ClienteDetail from './pages/Clientes/ClienteDetail'
+import Orcamentos from './pages/Orcamentos/Orcamentos'
+import OrcamentoForm from './pages/Orcamentos/OrcamentoForm'
+import OrcamentoDetail from './pages/Orcamentos/OrcamentoDetail'
+import Relatorios from './pages/Relatorios'
 
 function App() {
   return (
@@ -18,15 +18,15 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/customers" element={<Customers />} />
-            <Route path="/customers/new" element={<CustomerForm />} />
-            <Route path="/customers/:id" element={<CustomerDetail />} />
-            <Route path="/customers/:id/edit" element={<CustomerForm />} />
-            <Route path="/quotes" element={<Quotes />} />
-            <Route path="/quotes/new" element={<QuoteForm />} />
-            <Route path="/quotes/:id" element={<QuoteDetail />} />
-            <Route path="/quotes/:id/edit" element={<QuoteForm />} />
-            <Route path="/reports" element={<Reports />} />
+            <Route path="/clientes" element={<Clientes />} />
+            <Route path="/clientes/novo" element={<ClienteForm />} />
+            <Route path="/clientes/:id" element={<ClienteDetail />} />
+            <Route path="/clientes/:id/editar" element={<ClienteForm />} />
+            <Route path="/orcamentos" element={<Orcamentos />} />
+            <Route path="/orcamentos/novo" element={<OrcamentoForm />} />
+            <Route path="/orcamentos/:id" element={<OrcamentoDetail />} />
+            <Route path="/orcamentos/:id/editar" element={<OrcamentoForm />} />
+            <Route path="/relatorios" element={<Relatorios />} />
           </Routes>
         </Layout>
       </Router>
